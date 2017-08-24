@@ -1,0 +1,29 @@
+﻿
+<script src="~/Scripts/Controllers/PackageController.js"></script>
+<div class="jumbotron">    
+    <h3>Parse the Parcel</h3>
+    <p style="align-items:center">
+        <h5>Our new service shipping costs are based on size and we offer different prices for small, medium, and large boxes. Unfortunately we're currently unable to move heavy packages so we've placed an upper limit of 25kg per package.</h5>  
+        <h5>There is <strong>no validation</strong> on the front end of dimension and weight.</h5>
+    </p>
+</div>
+
+<div class="form-group">  
+    Length Mm:<br>
+    <input type="number" id="Length" min="0" max="100000000"><br>
+    Breadth Mm:<br>
+    <input type="number" id="Breadth" min="0" max="100000000"><br>
+    Height Mm:<br>
+    <input type="number" id="Height" min="0" max="100000000" ><br>
+    Weight Kg:<br>
+    <input type="number" id="Weight" min="0" max="100000000">
+    <br> 
+</div>
+
+<div>
+    <input type="button" id="BtnPkg" value="Search Package Type" onclick="getPackage()"><br>
+</div>
+
+<div id="msgs"></div>
+
+
